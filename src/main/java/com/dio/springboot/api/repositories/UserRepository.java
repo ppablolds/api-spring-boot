@@ -42,7 +42,7 @@ public class UserRepository {
     public User findByUsername(String username) {
         System.out.println(String.format("FIND BY USERNAME - Recebendo o username: %s para localizar um usuario", username));
         System.out.println(username);
-        return new User("Maria", "123");
+        return new User(username, "123");
     }
 
 }
